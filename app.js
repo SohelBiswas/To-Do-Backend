@@ -25,8 +25,8 @@ async function connectDB() {
 connectDB();
 app.use("/todos", router);
 
+// ****This is a basic code where the DB was not attached and the task would save in a array.
 // let todos = [];
-
 // app.post("/todos", (req, res) => {
 //   console.log("Incoming body:", req.body);
 
@@ -65,6 +65,7 @@ app.use("/todos", router);
 //   todos = todos.filter((item) => item.id !== id);
 //   res.send(204).send();
 // });
+// ****Basic code ends here
 
 app.get("/", (req, res) => {
   res.send("To-Do API is running!");
