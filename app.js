@@ -23,10 +23,9 @@ async function connectDB() {
   }
 }
 connectDB();
+app.use("/todos", router);
 
 // let todos = [];
-
-app.use("/todos", router);
 
 // app.post("/todos", (req, res) => {
 //   console.log("Incoming body:", req.body);
