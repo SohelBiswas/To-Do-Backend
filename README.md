@@ -61,3 +61,23 @@ A robust RESTful API built with **Node.js**, **Express**, and **MongoDB Atlas**.
    ```
 
 ---
+
+## 🌐 API Endpoints
+
+### GET /todos
+
+- **Returns all tasks from the database.**
+
+### POST /todos
+
+- **Creates a new task. Requires a JSON body: { "title": "String", "completed": Boolean }**
+
+### PUT /todos/:id
+
+- **Updates a task status. Requires a JSON body: { "completed": Boolean }**
+
+### DELETE /todos/:id
+
+- **Deletes a specific task by its unique ID.**
+
+---
