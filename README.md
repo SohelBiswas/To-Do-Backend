@@ -64,21 +64,37 @@ A robust RESTful API built with **Node.js**, **Express**, and **MongoDB Atlas**.
 
 ## 🌐 API Endpoints
 
-### GET /todos
+**GET /todos**
 
-- **Returns all tasks from the database.**
+- Returns all tasks from the database.
 
-### POST /todos
+**POST /todos**
 
-- **Creates a new task. Requires a JSON body: { "title": "String", "completed": Boolean }**
+- Creates a new task. Requires a JSON body: { "title": "String", "completed": Boolean }
 
-### PUT /todos/:id
+**PUT /todos/:id**
 
-- **Updates a task status. Requires a JSON body: { "completed": Boolean }**
+- Updates a task status. Requires a JSON body: { "completed": Boolean }
 
-### DELETE /todos/:id
+**DELETE /todos/:id**
 
-- **Deletes a specific task by its unique ID.**
 - Deletes a specific task by its unique ID.
+
+---
+## 📂 PROJECT STRUCTURE
+
+├── node_modules/     # Project dependencies (ignored by Git)
+
+├── models/           # Mongoose Schemas (Todo.js)
+
+├── routes/           # Express Route Handlers (todoRoutes.js)
+
+├── .env              # Environment variables (ignored by Git)
+
+├── .gitignore        # Files to exclude from GitHub
+
+├── app.js            # Main entry point & Server configuration
+
+└── package.json      # Project metadata & dependency list
 
 ---
