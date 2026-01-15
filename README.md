@@ -76,8 +76,9 @@ A robust RESTful API built with **Node.js**, **Express**, and **MongoDB Atlas**.
 
 - **Updates a task status. Requires a JSON body: { "completed": Boolean }**
 
-## DELETE /todos/:id
+### DELETE /todos/:id
 
-- _Deletes a specific task by its unique ID._
+- **Deletes a specific task by its unique ID.**
+- Deletes a specific task by its unique ID.
 
 ---
