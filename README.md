@@ -31,6 +31,7 @@ A robust RESTful API built with **Node.js**, **Express**, and **MongoDB Atlas**.
 
 - **Nodemon**: Development tool that automatically restarts the server on file changes.
 - **Postman**: Used for API testing and verification.
+- **Github**: Used for web hosting, version control and collaboration.
 
 ---
 
@@ -51,3 +52,12 @@ A robust RESTful API built with **Node.js**, **Express**, and **MongoDB Atlas**.
    MONGO_URI=mongodb+srv://<username>:<password>@cluster-name.mongodb.net/todoDB
    PORT=****
    ```
+4. **MongoDB Atlas Network Access:**
+   Ensure your IP address is whitelisted in MongoDB Atlas.
+   Note: For dynamic IP environments, 0.0.0.0/0 (Allow Access from Anywhere) has been configured to ensure consistent connectivity.
+5. **Run The Server:**
+   ```bash
+   npm start
+   ```
+
+---
