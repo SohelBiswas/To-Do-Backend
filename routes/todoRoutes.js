@@ -12,6 +12,18 @@ router.get("/", async (req, res) => {
   }
 });
 
+router.get("/:id", async (req, res) => {
+  try {
+    const findTodo = await Todo.findById(req.params.id);
+    if (!findTodo) {
+      res.status(404).json({ Message: "Task not found" });
+    }
+    res.status(200).json({ Message: "Task Found", findTodo });
+  } catch (error) {
+    res.status(404).json({ Message: "Find Task Failed" }, error.Message);
+  }
+});
+
 router.post("/", async (req, res) => {
   try {
     const newTodo = new Todo({
