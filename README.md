@@ -49,5 +49,5 @@ A robust RESTful API built with **Node.js**, **Express**, and **MongoDB Atlas**.
    Create a .env file in the root directory and add your MongoDB connection string:
    ```bash
    MONGO_URI=mongodb+srv://<username>:<password>@cluster-name.mongodb.net/todoDB
-   PORT=5000
+   PORT=****
    ```
